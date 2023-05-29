@@ -1,5 +1,5 @@
 # Site
-repository: sproogen/resume-theme
+repository: cyrillknecht/cyrillknecht.github.io
 favicon: images/favicon.ico
 
 # Content configuration version
@@ -12,7 +12,7 @@ email: cyrknech [at] student [dot] ethz [dot] ch
 website: www.github.com/sproogen/resume-theme
 
 # Dark Mode (true/false/never)
-darkmode: true
+darkmode: false
 
 # Social links
 #twitter_username: facespics
