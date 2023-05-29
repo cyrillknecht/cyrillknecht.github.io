@@ -81,13 +81,13 @@ content:
   - title: Education # Title for the section
     layout: list # Type of content section (list/text)
     content:
-    - layout: left
-        - title: ETH Zurich
-          caption: 2022 - 2024
-          sub_title: MSc Electrical Engineering and Information Technology
-          quote: >
-          description: | # this will include new lines to allow paragraphs
-              Focus on Machine Learning and Computer Vision
+      - layout: left
+        title: ETH Zurich
+        caption: 2022 - 2024
+        sub_title: MSc Electrical Engineering and Information Technology
+        quote: >
+        description: | # this will include new lines to allow paragraphs
+            Focus on Machine Learning and Computer Vision
 
       - layout: left
         title: ETH Zurich
@@ -95,6 +95,7 @@ content:
         sub_title: BSc Electrical Engineering and Information Technology
         quote: >
         description: | # this will include new lines to allow paragraphs
+          Broad Focus
 
       - layout: left
         title: Kantonsschule Baden
