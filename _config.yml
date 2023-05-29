@@ -9,7 +9,7 @@ version: 2
 name: Cyrill Knecht
 title: Master's Student in EE & IT at ETH Zurich
 email: cyrknech [at] student [dot] ethz [dot] ch
-website: www.cyrillknecht.github.io
+website: cyrillknecht.github.io
 
 # Dark Mode (true/false/never)
 darkmode: false
@@ -95,15 +95,15 @@ content:
         sub_title: BSc Electrical Engineering and Information Technology
         quote: >
         description: | # this will include new lines to allow paragraphs
-          Broad Focus
+          
 
       - layout: left
         title: Kantonsschule Baden
         caption: 2013 - 2017
-        sub_title: Matura 5.3/6.0
+        sub_title: Matura (Swiss High School Diploma)
         quote: >
         description: | # this will include new lines to allow paragraphs
-          Focus on Business and Law
+          Focus on Business and Law | Grade 5.3/6.0
 
 
   - title: A Little More About Me
