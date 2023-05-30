@@ -69,7 +69,7 @@ content:
     content:
       - layout: left
         title: ETH Zurich
-        caption: 2022 - 2024
+        caption: 2022 - 2024 (expected)
         sub_title: MSc Electrical Engineering and Information Technology
         quote: >
         description: | # this will include new lines to allow paragraphs
