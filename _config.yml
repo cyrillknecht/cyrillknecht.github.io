@@ -73,7 +73,8 @@ content:
         sub_title: MSc Electrical Engineering and Information Technology
         quote: >
         description: | # this will include new lines to allow paragraphs
-          Main focus on Machine Learning and Software Engineering.
+          Main focus on Machine Learning, Software Engineering and Data Science.
+          Secondary focus on Automatic Control.
           
           Most Relevant Courses:
           - [Probabilistic Artificial Intelligence](https://www.vorlesungen.ethz.ch//Vorlesungsverzeichnis/lerneinheit.view?lerneinheitId=147370&semkez=2021W&ansicht=LEHRVERANSTALTUNGEN&lang=en)
@@ -115,7 +116,7 @@ content:
       - ⛷️ Skiing 
       - 📚 Literature 
       - 🏋️ Fitness 
-      - 🏐Roundnet 
+      - 🏐 Roundnet 
 
 # Footer
 footer_show_references: true
