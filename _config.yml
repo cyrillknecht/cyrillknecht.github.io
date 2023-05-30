@@ -83,6 +83,15 @@ content:
         sub_title: MSc Electrical Engineering and Information Technology
         quote: >
         description: | # this will include new lines to allow paragraphs
+          Main focus on Machine Learning and Software Engineering.
+          Most Relevant Courses:
+          - [Probabilistic Artificial Intelligence](https://www.vorlesungen.ethz.ch//Vorlesungsverzeichnis/lerneinheit.view?lerneinheitId=147370&semkez=2021W&ansicht=LEHRVERANSTALTUNGEN&lang=en)
+          - [Deep Learning](https://www.vorlesungen.ethz.ch//Vorlesungsverzeichnis/lerneinheit.view?semkez=2021W&ansicht=ALLE&lerneinheitId=148055&lang=en)
+          - [Image Analysis and Computer Vision](https://www.vorlesungen.ethz.ch//lerneinheitPre.do?semkez=2021W&lerneinheitId=146800&lang=en)
+          - [Robot Learning](https://www.vorlesungen.ethz.ch//Vorlesungsverzeichnis/lerneinheit.view?semkez=2022S&ansicht=KATALOGDATEN&lerneinheitId=161281&lang=en)
+          - [Big Data for Engineers](https://www.vorlesungen.ethz.ch//lerneinheitPre.do?semkez=2018S&lerneinheitId=122247&lang=en)
+          - [Software Engineering](https://www.vorlesungen.ethz.ch//Vorlesungsverzeichnis/lerneinheit.view?lerneinheitId=136949&semkez=2020S&ansicht=KATALOGDATEN&lang=de)
+
 
       - layout: left
         title: ETH Zurich
@@ -90,6 +99,10 @@ content:
         sub_title: BSc Electrical Engineering and Information Technology
         quote: >
         description: | # this will include new lines to allow paragraphs
+          Broad Focus on Electrical Engineering and Information Technology.
+          Most Relevant Courses:
+          - [Introduction to Machine Learning](https://www.vorlesungen.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?lerneinheitId=167629&semkez=2023S&ansicht=LEHRVERANSTALTUNGEN&lang=en)
+
           
 
       - layout: left
@@ -98,14 +111,14 @@ content:
         sub_title: Matura (Swiss High School Diploma) 5.3/6.0
         quote: >
         description: | # this will include new lines to allow paragraphs
-
+          Focus on Business and Law.
 
   - title: A Little More About Me
     layout: text
     content: | # this will include new lines to allow paragraphs
       Alongside my interests in machine learning and software engineering some of my other interests and hobbies are:
       - ⛷️ Skiing 
-      - 📚 Reading 
+      - 📚 Literature 
       - 🏋️ Fitness 
       - 🏐Roundnet 
 
