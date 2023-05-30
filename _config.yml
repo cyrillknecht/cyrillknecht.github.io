@@ -36,7 +36,7 @@ linkedin_username: cyrill-david-knecht
 
 # About Section
 # about_title: About Me
-about_profile_image: images/profile.jpg
+about_profile_image: images/cv_photo.jpg
 about_content: | # this will include new lines to allow paragraphs
   Hi, I'm Cyrill. I'm a Master's student in Electrical Engineering and Information Technology at ETH Zurich.
   I'm interested in machine learning, software engineering and data science.
