@@ -48,15 +48,8 @@ linkedin_username: cyrill-david-knecht
 # about_title: About Me
 about_profile_image: images/profile.jpg
 about_content: | # this will include new lines to allow paragraphs
-  👋😊 Hi, I’m Cyrill. Nice to meet you!
-  
-  🎓 I’m currently studying 💻Electrical Engineering and Information Technology @ETH Zurich.
-
-  🎯 My focus lies on 🧠Machine Learning and 👁️Computer Vision.
-
-  📚 I am also interested in 🤖Robotics and 👨‍💻Software Engineering in general.
-
-  📞 You can reach me at 📧cyrknech [at] student [dot] ethz [dot] ch
+  Hi, I'm Cyrill. I'm a Master's student in Electrical Engineering and Information Technology at ETH Zurich.
+  I'm interested in machine learning, software engineering and data science.
   
   👷‍ **This will be my personal website and portfolio. It is still under construction, so please be patient.** 😅
   
@@ -90,7 +83,6 @@ content:
         sub_title: MSc Electrical Engineering and Information Technology
         quote: >
         description: | # this will include new lines to allow paragraphs
-            Focus on Machine Learning and Computer Vision
 
       - layout: left
         title: ETH Zurich
@@ -103,10 +95,9 @@ content:
       - layout: left
         title: Kantonsschule Baden
         caption: 2013 - 2017
-        sub_title: Matura (Swiss High School Diploma)
+        sub_title: Matura (Swiss High School Diploma) 5.3/6.0
         quote: >
         description: | # this will include new lines to allow paragraphs
-          Focus on Business and Law | Grade 5.3/6.0
 
 
   - title: A Little More About Me
