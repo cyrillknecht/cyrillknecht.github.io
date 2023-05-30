@@ -7,7 +7,7 @@ version: 2
 
 # Personal info
 name: Cyrill Knecht
-title: Master's Student in EE & IT at ETH Zurich
+title: Master's Student in EE & IT @ ETH Zurich
 email: cyrknech [at] student [dot] ethz [dot] ch
 website: cyrillknecht.github.io
 
@@ -45,55 +45,24 @@ about_content: | # this will include new lines to allow paragraphs
   
 
 content:
-  - title: Projects # Title for the section
-    layout: list # Type of content section (list/text)
-    content:
-      - layout: top-middle
-        title: Super awesome project
-        link: github.com/sproogen
-        # link_text: Project Website
-        additional_links:
-          - title:  sproogen/modern-resume-theme
-            icon: fab fa-github
-            url: github.com/sproogen/modern-resume-theme
-          # - title:  Github page for project (eg. sproogen/modern-resume-theme)
-          #   icon: fab fa-github
-          #   url: Link to project (eg. sproogen.github.io/modern-resume-theme)
-        quote: >
-          This is probably one of the greatest apps ever created, if you don't agree you're probably wrong.
-        description: | # this will include new lines to allow paragraphs
-          I started this project as a way if learning <mark>React</mark> and it has since grown into a fully fledged app. I have learned many skills through this and been I'm very proud of having this in my portfolio. If you don't have a project as awesome as this I would advise you make one.
-
-      - layout: top-middle
-        title: Course Projects
-        projects:
-          - course: Robot Learning
-            project: WalkDog
-            description: Used the Dreamer Reinforcement Learning algorithm to train a quadruped robot (Unitree Go1) to walk different terrains in the Isaac Gym environment.
-          - course: Software Engineering
-            project: No Limit Texas Hold'em Poker
-            description: Developed a multiplayer poker game using C++ and wxWidgets.
-          - course: Deep Learning
-            project: Self-Augmentation Network for Sarcasm Generation with Synthetic Data
-            description: Made use of GPT-2 to generate synthetic data and fine-tuned Bert for sarcasm detection.
-
-      - layout: top-middle
-        title: Bachelor Thesis
-        project: Smart Patch Flagship Project
-        description: |
-          Developed a smart patch wearable device to monitor the health of the wearer.
-          - Worked with an IoT platform.
-          - Developed a cross-platform app with Flutter.
-          - Developed a communication interface between the app, IoT platform, and the smart patch using MQTT and BLE in Python.
-
-      - layout: top-middle
-        title: Group Project
-        project: Optogenetic stimulation of neuronal networks in vitro
-        description: |
-          - Developed a system to stimulate neuronal networks in vitro with light.
-          - Built an optical setup.
-          - Worked in a wet lab.
-          - Used Python programming.
+#  - title: Projects # Title for the section
+#    layout: list # Type of content section (list/text)
+#    content:
+#      - layout: top-middle
+#        title: Super awesome project
+#        link: github.com/sproogen
+#        # link_text: Project Website
+#        additional_links:
+#          - title:  sproogen/modern-resume-theme
+#            icon: fab fa-github
+#            url: github.com/sproogen/modern-resume-theme
+#          # - title:  Github page for project (eg. sproogen/modern-resume-theme)
+#          #   icon: fab fa-github
+#          #   url: Link to project (eg. sproogen.github.io/modern-resume-theme)
+#        quote: >
+#          This is probably one of the greatest apps ever created, if you don't agree you're probably wrong.
+#        description: | # this will include new lines to allow paragraphs
+#          I started this project as a way if learning <mark>React</mark> and it has since grown into a fully fledged app. I have learned many skills through this and been I'm very proud of having this in my portfolio. If you don't have a project as awesome as this I would advise you make one.
 
   - title: Education # Title for the section
     layout: list # Type of content section (list/text)
@@ -139,7 +108,7 @@ content:
           Focus on Business and Law.
 
 
-  - title: A Little More About Me
+  - title: A little more about me # Title for the section
     layout: text
     content: | # this will include new lines to allow paragraphs
       Alongside my interests in machine learning and software engineering some of my other interests and hobbies are:
