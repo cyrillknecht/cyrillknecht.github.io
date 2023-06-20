@@ -42,7 +42,7 @@ about_content: | # this will include new lines to allow paragraphs
   I'm interested in machine learning, software engineering and data science.
   
   👷 🚧 **This will be my personal website and portfolio.
-  It is still under construction, so please excuse any errors or missing content .** 🚧
+  It is still under construction.** 🚧
 
 content:
 #  - title: Projects # Title for the section
@@ -64,62 +64,62 @@ content:
 #        description: | # this will include new lines to allow paragraphs
 #          I started this project as a way if learning <mark>React</mark> and it has since grown into a fully fledged app. I have learned many skills through this and been I'm very proud of having this in my portfolio. If you don't have a project as awesome as this I would advise you make one.
 
-  - title: Education # Title for the section
-    layout: list # Type of content section (list/text)
-    content:
-      - layout: left
-        title: ETH Zurich
-        caption: 2022 - 2024 (expected)
-        sub_title: MSc Electrical Engineering and Information Technology
-        quote: >
-        description: | # this will include new lines to allow paragraphs
-          Main focus on Machine Learning, Software Engineering and Data Science.
-          Secondary focus on Automatic Control.
-          
-          Most Relevant Courses:
-          - [Probabilistic Artificial Intelligence](https://www.vorlesungen.ethz.ch//Vorlesungsverzeichnis/lerneinheit.view?lerneinheitId=147370&semkez=2021W&ansicht=LEHRVERANSTALTUNGEN&lang=en)
-          - [Deep Learning](https://www.vorlesungen.ethz.ch//Vorlesungsverzeichnis/lerneinheit.view?semkez=2021W&ansicht=ALLE&lerneinheitId=148055&lang=en)
-          - [Image Analysis and Computer Vision](https://www.vorlesungen.ethz.ch//lerneinheitPre.do?semkez=2021W&lerneinheitId=146800&lang=en)
-          - [Robot Learning](https://www.vorlesungen.ethz.ch//Vorlesungsverzeichnis/lerneinheit.view?semkez=2022S&ansicht=KATALOGDATEN&lerneinheitId=161281&lang=en)
-          - [Big Data for Engineers](https://www.vorlesungen.ethz.ch//lerneinheitPre.do?semkez=2018S&lerneinheitId=122247&lang=en)
-          - [Software Engineering](https://www.vorlesungen.ethz.ch//Vorlesungsverzeichnis/lerneinheit.view?lerneinheitId=136949&semkez=2020S&ansicht=KATALOGDATEN&lang=de)
-
-
-      - layout: left
-        title: ETH Zurich
-        caption: 2018 - 2022
-        sub_title: BSc Electrical Engineering and Information Technology
-        quote: >
-        description: | # this will include new lines to allow paragraphs
-          Broad Focus on Electrical Engineering and Information Technology.
-          
-          Most Relevant Courses:
-          - [Introduction to Machine Learning](https://www.vorlesungen.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?lerneinheitId=167629&semkez=2023S&ansicht=LEHRVERANSTALTUNGEN&lang=en)
-          - [Computer Engineering](https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?lang=en&lerneinheitId=167541&semkez=2023S&ansicht=LEHRVERANSTALTUNGEN&)
-          - [Computer Science II](https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?lang=en&lerneinheitId=172243&semkez=2023W&ansicht=LEHRVERANSTALTUNGEN&)
-          - [Computer Science I](https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?lang=en&lerneinheitId=157782&semkez=2022S&ansicht=LEHRVERANSTALTUNGEN&)
-          
-
-      - layout: left
-        title: Kantonsschule Baden
-        caption: 2013 - 2017
-        sub_title: Matura (Swiss High School Diploma) 5.3/6.0
-        quote: >
-        description: | # this will include new lines to allow paragraphs
-          Focus on Business and Law.
-
-
-  - title: A little more about me # Title for the section
-    layout: text
-    content: | # this will include new lines to allow paragraphs
-      Alongside my interests in machine learning and software engineering some of my other interests and hobbies are:
-      - ⛷️ Skiing 
-      - 📚 Literature 
-      - 🏋️ Fitness 
-      - 🏐 Roundnet 
+#  - title: Education # Title for the section
+#    layout: list # Type of content section (list/text)
+#    content:
+#      - layout: left
+#        title: ETH Zurich
+#        caption: 2022 - 2024 (expected)
+#        sub_title: MSc Electrical Engineering and Information Technology
+#        quote: >
+#        description: | # this will include new lines to allow paragraphs
+#          Main focus on Machine Learning, Software Engineering and Data Science.
+#          Secondary focus on Automatic Control.
+#
+#          Most Relevant Courses:
+#          - [Probabilistic Artificial Intelligence](https://www.vorlesungen.ethz.ch//Vorlesungsverzeichnis/lerneinheit.view?lerneinheitId=147370&semkez=2021W&ansicht=LEHRVERANSTALTUNGEN&lang=en)
+#          - [Deep Learning](https://www.vorlesungen.ethz.ch//Vorlesungsverzeichnis/lerneinheit.view?semkez=2021W&ansicht=ALLE&lerneinheitId=148055&lang=en)
+#          - [Image Analysis and Computer Vision](https://www.vorlesungen.ethz.ch//lerneinheitPre.do?semkez=2021W&lerneinheitId=146800&lang=en)
+#          - [Robot Learning](https://www.vorlesungen.ethz.ch//Vorlesungsverzeichnis/lerneinheit.view?semkez=2022S&ansicht=KATALOGDATEN&lerneinheitId=161281&lang=en)
+#          - [Big Data for Engineers](https://www.vorlesungen.ethz.ch//lerneinheitPre.do?semkez=2018S&lerneinheitId=122247&lang=en)
+#          - [Software Engineering](https://www.vorlesungen.ethz.ch//Vorlesungsverzeichnis/lerneinheit.view?lerneinheitId=136949&semkez=2020S&ansicht=KATALOGDATEN&lang=de)
+#
+#
+#      - layout: left
+#        title: ETH Zurich
+#        caption: 2018 - 2022
+#        sub_title: BSc Electrical Engineering and Information Technology
+#        quote: >
+#        description: | # this will include new lines to allow paragraphs
+#          Broad Focus on Electrical Engineering and Information Technology.
+#
+#          Most Relevant Courses:
+#          - [Introduction to Machine Learning](https://www.vorlesungen.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?lerneinheitId=167629&semkez=2023S&ansicht=LEHRVERANSTALTUNGEN&lang=en)
+#          - [Computer Engineering](https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?lang=en&lerneinheitId=167541&semkez=2023S&ansicht=LEHRVERANSTALTUNGEN&)
+#          - [Computer Science II](https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?lang=en&lerneinheitId=172243&semkez=2023W&ansicht=LEHRVERANSTALTUNGEN&)
+#          - [Computer Science I](https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?lang=en&lerneinheitId=157782&semkez=2022S&ansicht=LEHRVERANSTALTUNGEN&)
+#
+#
+#      - layout: left
+#        title: Kantonsschule Baden
+#        caption: 2013 - 2017
+#        sub_title: Matura (Swiss High School Diploma) 5.3/6.0
+#        quote: >
+#        description: | # this will include new lines to allow paragraphs
+#          Focus on Business and Law.
+#
+#
+#  - title: A little more about me # Title for the section
+#    layout: text
+#    content: | # this will include new lines to allow paragraphs
+#      Alongside my interests in machine learning and software engineering some of my other interests and hobbies are:
+#      - ⛷️ Skiing
+#      - 📚 Literature
+#      - 🏋️ Fitness
+#      - 🏐 Roundnet
 
 # Footer
-footer_show_references: true
+footer_show_references: false
 # references_title: References on request (Override references text)
 
 # Build settings
