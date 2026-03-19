@@ -1,0 +1,55 @@
+.about-grid {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 4rem;
+  align-items: center;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    text-align: center;
+  }
+}
+
+.about-photo {
+  img {
+    width: 100%;
+    max-width: 280px;
+    border-radius: 1rem;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+.about-text {
+  p {
+    color: rgba(226, 232, 240, 0.85);
+    line-height: 1.8;
+    margin-bottom: 1.25rem;
+    font-size: 1.05rem;
+
+    strong {
+      color: #e2e8f0;
+    }
+  }
+}
+
+.about-interests {
+  margin-top: 1.5rem;
+}
+
+.interests-label {
+  display: block;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: rgba(165, 180, 252, 0.7);
+  margin-bottom: 0.75rem;
+}
+
+mat-chip-set {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}

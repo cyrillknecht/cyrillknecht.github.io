@@ -1,0 +1,23 @@
+<section id="skills" class="section skills-section">
+  <div class="container">
+    <h2 class="section-title" data-aos="fade-up">Skills</h2>
+    <div class="skills-grid">
+      @for (group of skillGroups; track group.category; let i = $index) {
+        <div class="skill-group" data-aos="fade-up" [attr.data-aos-delay]="i * 100">
+          <h3 class="skill-group-title">{{ group.category }}</h3>
+          @for (skill of group.skills; track skill.name) {
+            <div class="skill-item">
+              <div class="skill-label">
+                <span>{{ skill.name }}</span>
+                <span class="skill-pct">{{ skill.level }}%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill" [style.width.%]="skill.level"></div>
+              </div>
+            </div>
+          }
+        </div>
+      }
+    </div>
+  </div>
+</section>

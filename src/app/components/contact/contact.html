@@ -1,0 +1,68 @@
+<section id="contact" class="section contact-section">
+  <div class="container">
+    <h2 class="section-title" data-aos="fade-up">Get in Touch</h2>
+    <p class="contact-intro" data-aos="fade-up" data-aos-delay="50">
+      Have a question, opportunity, or just want to say hello? Send me a message.
+    </p>
+
+    <div class="contact-grid">
+      <div class="contact-info" data-aos="fade-right">
+        <div class="contact-item">
+          <mat-icon>email</mat-icon>
+          <div>
+            <span class="label">Email</span>
+            <span class="value">cyrknech [at] student.ethz.ch</span>
+          </div>
+        </div>
+        <div class="contact-item">
+          <mat-icon>school</mat-icon>
+          <div>
+            <span class="label">University</span>
+            <span class="value">ETH Zurich</span>
+          </div>
+        </div>
+        <div class="contact-item">
+          <mat-icon>location_on</mat-icon>
+          <div>
+            <span class="label">Location</span>
+            <span class="value">Zurich, Switzerland</span>
+          </div>
+        </div>
+      </div>
+
+      <form class="contact-form" (ngSubmit)="onSubmit(f)" #f="ngForm" data-aos="fade-left" data-aos-delay="100">
+        <mat-form-field appearance="outline">
+          <mat-label>Name</mat-label>
+          <input matInput name="name" [(ngModel)]="formData.name" required />
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+          <mat-label>Email</mat-label>
+          <input matInput name="email" type="email" [(ngModel)]="formData.email" required email />
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+          <mat-label>Message</mat-label>
+          <textarea matInput name="message" [(ngModel)]="formData.message"
+            required rows="5"></textarea>
+        </mat-form-field>
+
+        @if (status === 'success') {
+          <div class="form-feedback success">
+            <mat-icon>check_circle</mat-icon> Message sent! I'll get back to you soon.
+          </div>
+        }
+        @if (status === 'error') {
+          <div class="form-feedback error">
+            <mat-icon>error</mat-icon> Something went wrong. Please try again.
+          </div>
+        }
+
+        <button mat-flat-button color="primary" type="submit" [disabled]="status === 'sending'">
+          @if (status === 'sending') { Sending... } @else { Send Message }
+          <mat-icon>send</mat-icon>
+        </button>
+      </form>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,128 @@
+.hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+  position: relative;
+  background: linear-gradient(135deg, #0f0f23 0%, #1a1a3e 50%, #0f2440 100%);
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at 20% 50%, rgba(99, 102, 241, 0.15) 0%, transparent 60%),
+                radial-gradient(ellipse at 80% 20%, rgba(139, 92, 246, 0.1) 0%, transparent 50%);
+    pointer-events: none;
+  }
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  animation: fadeInUp 0.8s ease both;
+}
+
+.hero-avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 0 auto 1.5rem;
+  overflow: hidden;
+  border: 3px solid rgba(99, 102, 241, 0.6);
+  box-shadow: 0 0 30px rgba(99, 102, 241, 0.3);
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+  }
+}
+
+.hero-name {
+  font-size: clamp(2.2rem, 5vw, 4rem);
+  font-weight: 700;
+  color: #fff;
+  margin: 0 0 0.75rem;
+  letter-spacing: -0.02em;
+}
+
+.hero-typewriter {
+  font-size: clamp(1rem, 2.5vw, 1.4rem);
+  color: rgba(165, 180, 252, 0.9);
+  min-height: 2em;
+  margin: 0 0 2rem;
+
+  .cursor {
+    animation: blink 0.7s step-end infinite;
+    color: #818cf8;
+  }
+}
+
+.hero-links {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  a {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    color: #e2e8f0;
+    border-color: rgba(165, 180, 252, 0.4);
+
+    &:hover {
+      border-color: #818cf8;
+      color: #818cf8;
+    }
+  }
+}
+
+.hero-scroll-hint {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  color: rgba(165, 180, 252, 0.5);
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  animation: fadeIn 2s ease 1s both;
+}
+
+.scroll-arrow {
+  width: 20px;
+  height: 20px;
+  border-right: 2px solid rgba(165, 180, 252, 0.5);
+  border-bottom: 2px solid rgba(165, 180, 252, 0.5);
+  transform: rotate(45deg);
+  animation: bounce 1.5s ease infinite;
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes blink {
+  50% { opacity: 0; }
+}
+
+@keyframes bounce {
+  0%, 100% { transform: rotate(45deg) translateY(0); }
+  50% { transform: rotate(45deg) translateY(6px); }
+}

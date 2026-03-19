@@ -1,0 +1,31 @@
+<section id="about" class="section about-section">
+  <div class="container">
+    <h2 class="section-title" data-aos="fade-up">About Me</h2>
+    <div class="about-grid">
+      <div class="about-photo" data-aos="fade-right">
+        <img src="images/profile.jpg" alt="Cyrill Knecht" />
+      </div>
+      <div class="about-text" data-aos="fade-left" data-aos-delay="100">
+        <p>
+          Hi, I'm <strong>Cyrill</strong> — a Master's student in
+          <strong>Electrical Engineering and Information Technology</strong> at ETH Zurich.
+        </p>
+        <p>
+          I'm passionate about machine learning, software engineering, and data science.
+          I enjoy building things that sit at the intersection of theory and practical application.
+        </p>
+        <p>
+          When I'm not studying, you'll find me skiing the Swiss Alps, hitting the gym, or reading.
+        </p>
+        <div class="about-interests">
+          <span class="interests-label">Interests</span>
+          <mat-chip-set>
+            @for (item of interests; track item) {
+              <mat-chip>{{ item }}</mat-chip>
+            }
+          </mat-chip-set>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

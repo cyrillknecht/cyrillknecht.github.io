@@ -1,0 +1,127 @@
+.section-subtitle {
+  text-align: center;
+  color: rgba(165, 180, 252, 0.7);
+  margin-top: -1rem;
+  margin-bottom: 3rem;
+  font-size: 0.95rem;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.project-card {
+  background: rgba(255, 255, 255, 0.04) !important;
+  border: 1px solid rgba(165, 180, 252, 0.12) !important;
+  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  flex-direction: column;
+
+  &:hover {
+    transform: translateY(-4px);
+    border-color: rgba(99, 102, 241, 0.4) !important;
+    box-shadow: 0 10px 40px rgba(99, 102, 241, 0.15);
+  }
+
+  mat-card-title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #e2e8f0;
+    text-transform: capitalize;
+  }
+
+  mat-card-content {
+    flex: 1;
+  }
+
+  .repo-description {
+    color: rgba(148, 163, 184, 0.9);
+    font-size: 0.9rem;
+    line-height: 1.6;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  mat-card-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem 1rem;
+    border-top: 1px solid rgba(165, 180, 252, 0.08);
+    margin-top: auto;
+  }
+}
+
+.repo-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.8rem;
+  color: rgba(148, 163, 184, 0.8);
+}
+
+.lang-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.lang-name {
+  color: rgba(226, 232, 240, 0.8);
+}
+
+.repo-stat {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+
+  mat-icon {
+    font-size: 0.9rem;
+    width: 0.9rem;
+    height: 0.9rem;
+  }
+}
+
+.loading-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.skeleton-card {
+  height: 180px;
+  border-radius: 0.75rem;
+  background: linear-gradient(90deg, rgba(255,255,255,0.04) 25%, rgba(255,255,255,0.08) 50%, rgba(255,255,255,0.04) 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+}
+
+.error-msg {
+  text-align: center;
+  color: rgba(148, 163, 184, 0.8);
+
+  a { color: #818cf8; }
+}
+
+.projects-cta {
+  text-align: center;
+  margin-top: 3rem;
+
+  a {
+    color: rgba(165, 180, 252, 0.9);
+    border-color: rgba(165, 180, 252, 0.3);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+  }
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}

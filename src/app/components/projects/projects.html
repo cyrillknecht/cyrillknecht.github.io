@@ -1,0 +1,58 @@
+<section id="projects" class="section projects-section">
+  <div class="container">
+    <h2 class="section-title" data-aos="fade-up">Projects</h2>
+    <p class="section-subtitle" data-aos="fade-up" data-aos-delay="50">
+      Live from GitHub — my latest repositories
+    </p>
+
+    @if (loading) {
+      <div class="loading-grid">
+        @for (n of [1,2,3,4,5,6]; track n) {
+          <div class="skeleton-card"></div>
+        }
+      </div>
+    }
+
+    @if (error) {
+      <p class="error-msg">Could not load repositories. <a href="https://github.com/cyrillknecht" target="_blank">View on GitHub</a></p>
+    }
+
+    @if (!loading && !error) {
+      <div class="projects-grid">
+        @for (repo of repos; track repo.id; let i = $index) {
+          <mat-card class="project-card" [attr.data-aos]="'fade-up'" [attr.data-aos-delay]="(i % 3) * 80">
+            <mat-card-header>
+              <mat-card-title>{{ repoDisplayName(repo.name) }}</mat-card-title>
+            </mat-card-header>
+            <mat-card-content>
+              <p class="repo-description">{{ repo.description || 'No description provided.' }}</p>
+            </mat-card-content>
+            <mat-card-footer>
+              <div class="repo-meta">
+                @if (repo.language) {
+                  <span class="lang-dot" [style.background]="langColor(repo.language)"></span>
+                  <span class="lang-name">{{ repo.language }}</span>
+                }
+                <span class="repo-stat">
+                  <mat-icon>star_border</mat-icon>{{ repo.stargazers_count }}
+                </span>
+                <span class="repo-stat">
+                  <mat-icon>call_split</mat-icon>{{ repo.forks_count }}
+                </span>
+              </div>
+              <a mat-button [href]="repo.html_url" target="_blank" rel="noopener" color="primary">
+                View <mat-icon>open_in_new</mat-icon>
+              </a>
+            </mat-card-footer>
+          </mat-card>
+        }
+      </div>
+    }
+
+    <div class="projects-cta" data-aos="fade-up">
+      <a mat-stroked-button href="https://github.com/cyrillknecht" target="_blank" rel="noopener">
+        See all on GitHub <mat-icon>arrow_forward</mat-icon>
+      </a>
+    </div>
+  </div>
+</section>

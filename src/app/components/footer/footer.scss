@@ -1,0 +1,31 @@
+.footer {
+  background: rgba(0, 0, 0, 0.3);
+  border-top: 1px solid rgba(165, 180, 252, 0.08);
+  padding: 1.5rem 0;
+}
+
+.footer-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.footer-copy {
+  color: rgba(148, 163, 184, 0.6);
+  font-size: 0.85rem;
+}
+
+.footer-links {
+  display: flex;
+  gap: 0.25rem;
+
+  a {
+    color: rgba(148, 163, 184, 0.6);
+
+    &:hover {
+      color: #818cf8;
+    }
+  }
+}
