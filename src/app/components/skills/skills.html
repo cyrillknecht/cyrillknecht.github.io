@@ -10,7 +10,9 @@
           </div>
           <div class="skill-badges">
             @for (skill of group.skills; track skill; let j = $index) {
-              <span class="skill-badge" [style.animation-delay]="(j * 60) + 'ms'">{{ skill }}</span>
+              <span class="skill-badge"
+                    data-aos="fade-up"
+                    [attr.data-aos-delay]="i * 100 + j * 50">{{ skill }}</span>
             }
           </div>
         </div>
