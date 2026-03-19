@@ -13,7 +13,7 @@ import { MatIconModule } from '@angular/material/icon';
 export class HeroComponent implements OnInit, OnDestroy {
   displayedText = signal('');
   private subtitles = [
-    'Master\'s Student @ ETH Zurich',
+    'Master\'s Degree @ ETH Zurich',
     'Machine Learning Enthusiast',
     'Software Engineer',
     'Data Science Explorer'
