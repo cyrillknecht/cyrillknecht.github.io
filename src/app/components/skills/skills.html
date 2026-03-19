@@ -9,8 +9,10 @@
             <h3 class="skill-group-title">{{ group.category }}</h3>
           </div>
           <div class="skill-badges">
-            @for (skill of group.skills; track skill) {
-              <span class="skill-badge">{{ skill }}</span>
+            @for (skill of group.skills; track skill; let j = $index) {
+              <span class="skill-badge"
+                    data-aos="fade-up"
+                    [attr.data-aos-delay]="i * 100 + j * 50">{{ skill }}</span>
             }
           </div>
         </div>
