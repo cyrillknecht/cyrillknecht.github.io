@@ -1,0 +1,41 @@
+.contact-intro {
+  text-align: center;
+  color: rgba(165, 180, 252, 0.7);
+  margin-bottom: 3rem;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.75rem;
+}
+
+.contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  color: rgba(226, 232, 240, 0.9);
+  width: 100%;
+  max-width: 360px;
+
+  mat-icon {
+    color: #818cf8;
+    margin-top: 2px;
+    flex-shrink: 0;
+  }
+
+  .label {
+    display: block;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: rgba(165, 180, 252, 0.6);
+    margin-bottom: 0.2rem;
+  }
+
+  .value {
+    display: block;
+    font-size: 0.95rem;
+  }
+}
