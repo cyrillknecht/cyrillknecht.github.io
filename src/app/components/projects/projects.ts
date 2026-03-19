@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, signal } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
 import { MatCardModule } from '@angular/material/card';
@@ -26,9 +26,9 @@ interface GithubRepo {
   styleUrl: './projects.scss'
 })
 export class ProjectsComponent implements OnInit {
-  repos: GithubRepo[] = [];
-  loading = true;
-  error = false;
+  repos = signal<GithubRepo[]>([]);
+  loading = signal(true);
+  error = signal(false);
 
   private readonly LANGUAGE_COLORS: Record<string, string> = {
     TypeScript: '#3178c6',
@@ -53,12 +53,12 @@ export class ProjectsComponent implements OnInit {
       )
       .subscribe({
         next: (repos) => {
-          this.repos = repos.filter((r) => !r.fork).slice(0, 9);
-          this.loading = false;
+          this.repos.set(repos.filter((r) => !r.fork).slice(0, 9));
+          this.loading.set(false);
         },
         error: () => {
-          this.error = true;
-          this.loading = false;
+          this.error.set(true);
+          this.loading.set(false);
         }
       });
   }

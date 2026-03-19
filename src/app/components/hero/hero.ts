@@ -1,4 +1,4 @@
-import { Component, OnInit, OnDestroy } from '@angular/core';
+import { Component, OnInit, OnDestroy, signal } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
@@ -11,7 +11,7 @@ import { MatIconModule } from '@angular/material/icon';
   styleUrl: './hero.scss'
 })
 export class HeroComponent implements OnInit, OnDestroy {
-  displayedText = '';
+  displayedText = signal('');
   private subtitles = [
     'Master\'s Student @ ETH Zurich',
     'Machine Learning Enthusiast',
@@ -34,7 +34,7 @@ export class HeroComponent implements OnInit, OnDestroy {
   private type() {
     const current = this.subtitles[this.currentIndex];
     if (!this.isDeleting) {
-      this.displayedText = current.substring(0, this.charIndex + 1);
+      this.displayedText.set(current.substring(0, this.charIndex + 1));
       this.charIndex++;
       if (this.charIndex === current.length) {
         this.isDeleting = true;
@@ -42,7 +42,7 @@ export class HeroComponent implements OnInit, OnDestroy {
         return;
       }
     } else {
-      this.displayedText = current.substring(0, this.charIndex - 1);
+      this.displayedText.set(current.substring(0, this.charIndex - 1));
       this.charIndex--;
       if (this.charIndex === 0) {
         this.isDeleting = false;
