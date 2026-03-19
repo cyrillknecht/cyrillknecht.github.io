@@ -1,14 +1,6 @@
 .about-grid {
-  display: grid;
-  grid-template-columns: 280px 1fr;
-  gap: 4rem;
-  align-items: center;
-
-  @media (max-width: 768px) {
-    grid-template-columns: 1fr;
-    gap: 2rem;
-    text-align: center;
-  }
+  max-width: 720px;
+  margin: 0 auto;
 }
 
 .about-photo {

@@ -4,12 +4,15 @@
     <div class="skills-grid">
       @for (group of skillGroups; track group.category; let i = $index) {
         <div class="skill-group" data-aos="fade-up" [attr.data-aos-delay]="i * 100">
-          <h3 class="skill-group-title">{{ group.category }}</h3>
-          <ul class="skill-list">
+          <div class="skill-group-header">
+            <span class="skill-icon">{{ group.icon }}</span>
+            <h3 class="skill-group-title">{{ group.category }}</h3>
+          </div>
+          <div class="skill-badges">
             @for (skill of group.skills; track skill) {
-              <li class="skill-item">{{ skill }}</li>
+              <span class="skill-badge">{{ skill }}</span>
             }
-          </ul>
+          </div>
         </div>
       }
     </div>

@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 interface SkillGroup {
   category: string;
+  icon: string;
   skills: string[];
 }
 
@@ -17,19 +18,23 @@ export class SkillsComponent {
   skillGroups: SkillGroup[] = [
     {
       category: 'Machine Learning & AI',
-      skills: ['PyTorch / TensorFlow', 'Scikit-learn', 'Computer Vision', 'Probabilistic AI']
+      icon: '🧠',
+      skills: ['PyTorch / TensorFlow', 'Scikit-learn', 'Computer Vision', 'Probabilistic AI'],
     },
     {
       category: 'Software Engineering',
-      skills: ['Python', 'FastAPI', 'TypeScript / Angular', 'Java', 'C / C++']
+      icon: '⚙️',
+      skills: ['Python', 'FastAPI', 'TypeScript / Angular', 'Java', 'C / C++'],
     },
     {
       category: 'Data & Tools',
-      skills: ['SQL / Big Data', 'Git / Docker', 'Linux / Bash', 'MATLAB']
+      icon: '📊',
+      skills: ['SQL / Big Data', 'Git / Docker', 'Linux / Bash', 'MATLAB'],
     },
     {
       category: 'DevOps & Infrastructure',
-      skills: ['Kubernetes', 'OpenShift', 'Tekton', 'ArgoCD']
-    }
+      icon: '☁️',
+      skills: ['Kubernetes', 'OpenShift', 'Tekton', 'ArgoCD'],
+    },
   ];
 }
